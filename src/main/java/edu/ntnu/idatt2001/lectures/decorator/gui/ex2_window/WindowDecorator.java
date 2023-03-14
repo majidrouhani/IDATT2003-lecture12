@@ -1,4 +1,6 @@
-package edu.ntnu.idatt2001.lectures.decorator.win;
+package edu.ntnu.idatt2001.lectures.decorator.gui.ex2_window;
+
+import javafx.stage.Stage;
 
 /**
  * Represents a window decorator. A window decorator implements the Window-interface
@@ -20,8 +22,8 @@ abstract class WindowDecorator implements Window {
   }
 
   @Override
-  public void draw() {
-    windowToBeDecorated.draw(); //Delegation
+  public void draw(Stage stage) {
+    windowToBeDecorated.draw(stage); //Delegation
   }
 
   @Override

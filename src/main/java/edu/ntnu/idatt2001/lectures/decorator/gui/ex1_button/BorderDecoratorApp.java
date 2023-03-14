@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.decorator.gui;
+package edu.ntnu.idatt2001.lectures.decorator.gui.ex1_button;
 
 import javafx.application.Application;
 import javafx.scene.paint.Color;

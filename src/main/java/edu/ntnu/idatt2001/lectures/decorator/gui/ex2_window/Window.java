@@ -1,4 +1,6 @@
-package edu.ntnu.idatt2001.lectures.decorator.win;
+package edu.ntnu.idatt2001.lectures.decorator.gui.ex2_window;
+
+import javafx.stage.Stage;
 
 /**
  * An interface representing a Window.
@@ -8,10 +10,11 @@ public interface Window {
   /**
    * Draws the window onto the canvas.
    */
-  void draw();
+  void draw(Stage stage);
 
   /**
    * Returns the description of the window.
+   * 
    * @return the description of the window.
    */
   String getDescription();
