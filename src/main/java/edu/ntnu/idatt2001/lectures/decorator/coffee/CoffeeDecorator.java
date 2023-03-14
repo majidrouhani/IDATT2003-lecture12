@@ -4,8 +4,8 @@ package edu.ntnu.idatt2001.lectures.decorator.coffee;
 abstract class CoffeeDecorator implements Coffee {
     private Coffee decoratedCoffee;
 
-    protected CoffeeDecorator(Coffee decoratedCoffee) {
-        this.decoratedCoffee = decoratedCoffee;
+    protected CoffeeDecorator(Coffee coffee) {
+        this.decoratedCoffee = coffee;
     }
 
     public double getCost() {
