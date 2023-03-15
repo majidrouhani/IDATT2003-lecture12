@@ -1,0 +1,33 @@
+
+interface Window {
+  + draw(Stage stage): void ;
+  + getDescription(): String;
+}
+
+class SimpleWindow implements Window {
+
+  + draw(Stage stage): void;
+  + getDescription(): String;
+}
+
+abstract class WindowDecorator implements Window {
+  + windowToBeDecorated: Window <<final>>;
+  # WindowDecorator (Window windowToBeDecorated);
+  + draw(Stage stage): void;
+  + getDescription(): String;
+}
+
+
+class HorizontalScrollBarDecorator extends WindowDecorator {
+    + HorizontalScrollBarDecorator(Window windowToBeDecorated);
+    +  draw(Stage stage): void;
+    + getDescription(): String;
+    - drawHorizontalScrollBar(Stage stage): void;
+}
+
+class VerticalScrollBarDecorator extends WindowDecorator {
+    + VerticalScrollBarDecorator(Window windowToBeDecorated);
+    +  draw(Stage stage): void;
+    + getDescription(): String;
+    - drawVerticalScrollBar(Stage stage): void;
+}

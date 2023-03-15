@@ -1,0 +1,22 @@
+interface Coffee {
+    + getCost(): double;
+    + getDescription(): String;
+}
+
+class SimpleCoffee implements Coffee {
+    + getCost(): double;
+    + getDescription(): String;
+}
+
+abstract class CoffeeDecorator implements Coffee {
+    - decoratedCoffee: Coffee;
+    # CoffeeDecorator(Coffee coffee);
+    + getCost(): double;
+    + getDescription(): String;
+}
+
+class MilkCoffeeDecorator extends CoffeeDecorator {
+    + MilkCoffeeDecorator(Coffee decoratedCoffee);
+    + getCost(): double;
+    + getDescription():String;
+}

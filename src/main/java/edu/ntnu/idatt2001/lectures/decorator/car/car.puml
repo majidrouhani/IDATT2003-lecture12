@@ -1,0 +1,22 @@
+interface Car {
+    +assemble(): void
+}
+
+class BasicCar implements Car {
+
+}
+
+abstract class CarDecorator implements Car {
+    - car: Car;
+    +assemble(): void
+}
+
+class LuxuryCarDecorator extends CarDecorator {
+    +LuxuryCarDecorator(Car c);
+    +assemble(): void
+}
+
+class SportsCarDecorator extends CarDecorator {
+    +LuxuryCarDecorator(Car c);
+    +assemble(): void
+}
