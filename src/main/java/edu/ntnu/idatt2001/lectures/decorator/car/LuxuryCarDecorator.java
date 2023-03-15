@@ -1,7 +1,7 @@
 package edu.ntnu.idatt2001.lectures.decorator.car;
 
-public class LuxuryCar extends CarDecorator {
-    public LuxuryCar(Car c) {
+public class LuxuryCarDecorator extends CarDecorator {
+    public LuxuryCarDecorator(Car c) {
         super(c);
     }
 

@@ -1,8 +1,8 @@
 package edu.ntnu.idatt2001.lectures.decorator.coffee;
 
 // Concrete decorator
-class MilkCoffee extends CoffeeDecorator {
-    public MilkCoffee(Coffee decoratedCoffee) {
+class MilkCoffeeDecorator extends CoffeeDecorator {
+    public MilkCoffeeDecorator(Coffee decoratedCoffee) {
         super(decoratedCoffee);
     }
 
