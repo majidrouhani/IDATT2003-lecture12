@@ -7,7 +7,7 @@ public class App {
         System.out.println(coffee.getDescription() + " costs $" + coffee.getCost());
 
         // add milk to the coffee
-        coffee = new MilkCoffee(coffee);
+        coffee = new MilkCoffeeDecorator(coffee);
         System.out.println(coffee.getDescription() + " costs $" + coffee.getCost());
     }
 }
